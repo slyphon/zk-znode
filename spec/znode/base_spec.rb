@@ -155,7 +155,7 @@ describe ZK::Znode do
           end
 
           it %[should raise ZnodeNotFound exception] do
-            lambda { @znode.delete! }.should raise_error(ZK::Exceptions::ZnodeNotFound)
+            lambda { @znode.delete! }.should raise_error(ZK::Znode::Exceptions::ZnodeNotFound)
           end
         end
       end

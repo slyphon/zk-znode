@@ -8,7 +8,7 @@ module ZK
   end
 end
 
-require File.join('../exceptions', __FILE__) # avoid confusion w/ the base ZK::Exceptions
+require 'z_k/znode/exceptions'
 require 'z_k/znode/base'
 
 
