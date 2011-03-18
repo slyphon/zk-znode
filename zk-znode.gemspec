@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.summary     = %q{a simple ActiveModel-based wrapper around a zookeeper znode}
   s.description = s.summary
 
-  s.add_dependency('zk', '~> 0.6.0')
+#   s.add_dependency('zk', '~> 0.7.0')
   s.add_dependency('activesupport', '~> 3.0.0')
   s.add_dependency('activemodel',   '~> 3.0.0')
 
   s.add_development_dependency('rspec', '>= 2.0.1')
-  s.add_development_dependency('flexmock', '>= 2.0.1')
+  s.add_development_dependency('flexmock', '~> 0.8.10')
 
 
   s.files         = `git ls-files`.split("\n")
